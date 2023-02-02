@@ -1,0 +1,533 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#loader{
+    position: fixed;
+    width:100%;
+    height:100vh;
+    background-image:url('HTML-CSS/Assets/loader.gif') ;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index:999;
+}
+
+.image-container {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+.back {
+    width: 100%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+    background-repeat: no-repeat;
+
+
+}
+
+.typewriter {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    top: 50%;
+    left: 26%;
+    right: 26%;
+    align-content: center;
+
+}
+
+.typewriter p {
+ 
+    width: auto;
+
+    text-align: center;
+    margin: 0;
+    font-size: 2em;
+    color: white;
+    border-right: 2px solid white;
+    animation: cursor 0.7s infinite step-end, typing 3s steps(37);
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+@keyframes cursor {
+
+    0%,
+    100% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: white;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 490px
+    }
+
+}
+
+.typewriter h3 {
+    margin: 0;
+    text-align: center;
+    color: white;
+
+}
+
+.menu{
+    display: none;
+}
+
+.navbar {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+
+    padding: 10px;
+    z-index: 1;
+}
+.navjs{
+    background-color: white;
+}
+
+.navjs1{
+    background-color:  transparent;
+}
+
+.navbar ul {
+    float: right;
+    display: flex;
+    list-style: none;
+    margin-right: 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar li {
+    margin-right:50px;
+    float: right;
+}
+
+
+.links{
+    display: inline-block;
+    text-decoration: none;
+    /* margin-right: 50px; */
+    font-size: .9em;
+
+}
+
+.link-color{
+    color:white;
+}
+
+.link-black{
+    color:black;
+}
+
+
+.navbar a:hover {
+    color: skyblue;
+}
+
+.navbar-image {
+    object-fit: cover;
+    align-self: center;
+    width: auto;
+    aspect-ratio: 1/1;
+    background-image: url('HTML-CSS/Assets/logo.png');
+    background-repeat: no-repeat;
+    margin-left:10%;
+}
+
+.navbar-image2 {
+    object-fit: cover;
+    align-self: center;
+    width: auto;
+    aspect-ratio: 1/1;
+    background-image: url('HTML-CSS/Assets/logo-active.png');
+    background-repeat: no-repeat;
+    margin-left:10%;
+}
+
+.main-image{
+    visibility: hidden;
+}
+
+
+
+.navbar-image img {
+    
+}
+
+.sign-up{
+    background-color: rgb(0, 132, 255);
+    padding: 10px;
+    margin-right: 0;
+    text-decoration: none;
+    color:white;
+}
+
+/* Information css */
+
+#info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.service-box {
+    /* min-width: 200px; */
+   
+}
+
+.info-back-image {
+    flex-grow: 1;
+    justify-self: center;
+    position: relative;
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+}
+
+.info-back-image>img {
+    object-fit: cover;
+    width:100%;
+
+}
+
+.head {
+    /* height:100%; */
+    width: 100%;
+    position: absolute;
+    top: 0;
+
+}
+
+#info {
+
+    margin-top:-10%;
+}
+
+.subhead{
+    display: flex;
+    justify-content: space-between;
+    margin:10px;
+    font-size: 1em;
+    color:white;
+}
+
+.block2-detail{
+    color:white;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 20%;
+}
+.block3-detail{
+    color:white;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10%;
+}
+.block3-name{
+    color:white;
+    margin-left:10px;
+}
+.info-symbol i{
+    margin: 3px;
+}
+
+#services{
+    
+}
+.service-title{
+    margin-top:20%;
+    text-align: center;
+    font-size: 2.3em;
+}
+.service-info{
+    margin-top:.2%;
+    text-align: center;
+    color:rgb(139, 138, 138);
+    font-size: 1.3em;
+}
+
+.service-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   
+}
+.service-box1{
+    min-width: 250px;
+    aspect-ratio: 1/1;
+    border: 1px solid grey;
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: 1s ease;
+}
+
+
+
+.service-box2{
+    min-width: 250px;
+    aspect-ratio: 1/1;
+    border: 1px solid grey;
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: 1s ease;
+}
+
+
+
+.service-box3{
+    min-width: 250px;
+    aspect-ratio: 1/1;
+    border: 1px solid grey;
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: 1s ease;
+}
+
+.trans{
+    align-self: center;
+    position: absolute;
+    top:80px;
+    transition: 1s ease;
+    background-color: white;
+}
+
+
+.service-box3:hover .trans{
+    top:-20px;
+
+}
+.service-box3:hover{
+    border-color:rgb(83, 206, 255)
+}
+
+.service-box2:hover .trans{
+    top:-20px;
+
+}
+.service-box2:hover{
+    border-color:rgb(83, 206, 255)
+}
+
+.service-box1:hover .trans{
+    top:-20px;
+
+}
+.service-box1:hover{
+    border-color:rgb(83, 206, 255)
+}
+
+.para-title{
+    align-self: center;
+    position: absolute;
+    top:130px;
+    transition: 0.6s ease-out;
+
+}
+
+.service-box1:hover .para-title{
+    top: 40px;
+}
+
+.service-box2:hover .para-title{
+    top: 40px;
+}
+
+.service-box3:hover .para-title{
+    top: 40px;
+}
+
+.para{
+    position:absolute;
+    top:160px;
+    align-self:center;
+    font-size: 1em;
+    font-weight: 150;
+    width: 30px;
+    height: 0;
+    transition: 0.5s ease;
+    visibility: visible;
+    transition-delay: 0.2s ease-out;
+    text-align: center;
+    overflow: hidden;
+    color:grey;
+}
+
+.service-box2:hover .para{
+       width: 150px;
+       height: 150px;
+       overflow: hidden;
+       visibility: visible;
+       top:110px
+}
+.service-box1:hover .para{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    visibility: visible;
+    top:110px
+}
+.service-box3:hover .para{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    visibility: visible;
+    top:110px
+}
+.empty{
+    width: 100%;
+    aspect-ratio: 14/1;
+    background-color: rgb(230, 230, 230);
+    clip-path:polygon(0% 60%,100% 0%,100% 100%,0% 100% ) ;
+}
+/* homepage */
+
+#mobile-nav{
+    display: none;
+}
+.menu{
+    cursor: pointer;
+}
+.mobile-screen{
+    height: 100vh;
+    width:100%;
+    position: absolute;
+    background-color: white;
+    z-index: 200;
+}
+.menu-list{
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-70%,-50%);
+    text-align: center;
+    list-style: none;   
+}
+
+.menu-list li a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color:rgb(109, 109, 109);
+}
+.menu-list li a:hover{
+    color:skyblue;
+}
+
+.menu-list li{
+    margin:15px 0;
+}
+
+.back-icon{
+    width:100%;
+    text-align: center;
+    position: absolute;
+    bottom:0;
+    
+    background-color:rgb(64, 195, 255);
+}
+
+.back-icon i{
+    padding: 30px;
+}
+.brhere{
+    display: none;
+}
+
+
+@media screen and (max-width:480px) {
+    #jsnavbar ul{
+        display:none;
+    }
+    #info{
+        margin-top: -13%;
+    }
+    .typewriter p{
+        white-space: normal;
+        animation: typing 1.5s steps(37);
+    }
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+    
+        to {
+            width: 200px
+        }
+    }
+    .back{
+        width:100%;
+        aspect-ratio: 1/1.5;
+        object-fit: cover;
+    }
+    .menu{
+        display: block;
+        margin-right: 4%;
+        color:white;
+
+    }
+    .menu i{
+        transform: scale(2);
+        padding: 10px;
+    }
+    .brhere{
+        display: block;
+    }
+ 
+    .back {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+    }
+    .typewriter {
+        top: 40%;
+    }
+}
+
+@media screen and (max-width:580px){
+    .navbar li{
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width:740px){
+    .navbar ul{
+        margin-right: 5%;
+    }
+    .navbar li{
+        /* padding-right: 30px; */
+        margin-right: 15px;
+    }
+}
